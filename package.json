@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@types/node": "^18.15.1",
+    "plantuml-encoder": "^1.4.0",
+    "puml": "^1.0.1",
+    "tplant": "^3.1.0",
+    "tsx": "^3.12.5"
+  },
+  "scripts": {
+    "generate": "tplant --input classes/**/*.ts --output result.puml -A",
+    "render": "tsx app.ts",
+    "all":"yarn generate && yarn render"
+  }
+}
